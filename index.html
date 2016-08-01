@@ -1,0 +1,108 @@
+<!--
+Author: Nithya Narayanan
+Project: petparent.com
+Course: Usability Design for Websites
+Date: 15 June, 2016
+
+References: 
+	1) w3schools.com. "How To Responsive Top Navigation". Last accessed on July 22, 2016. http://www.w3schools.com/howto/howto_js_topnav.asp
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pet Parents</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+	<!-- site id-->
+	<ul class="topnav" id="myTopnav">
+		<li><a class="siteId " href="index.html"><b>petparents.com</b></a></li>
+		<li><a class="active" href="index.html" style="background-color:green">Home</a></li>
+		<li><a href="q&a.html">Q&A</a></li>
+		<li><a href="petplanner.html">Pet Planner</a></li>
+		<li><a href="petmap.html">Pet Map</a></li>
+		<li><a href="#petplanner">Breed Facts</a></li>
+		<li><a href="#petplanner">Coupons & Deals</a></li>
+		<li><a href="#petplanner">Our Blog</a></li>
+		<li><a href="#petplanner">Contact Us</a></li>
+		<li><a href="#about">About</a></li>			
+		<li class="icon">
+			<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+		</li>
+		<li class="search">
+			<input class="searchText" type="text" name="search_input" placeholder="Search this website"></input>  
+			<button class="searchButton" type="button" name="search_button">Search</button>
+		</li>
+	</ul>
+
+
+	<div class="sectionBackground">
+		<!--slides section-->		
+		<div class="slidesBackground borderWhite upperSection">
+			<div class="mySlides"><h1>Pet Planner</h1>
+				<li><p><myfontbold>Confused on which pet to choose?</myfontbold></p></li>
+				<li><p><myfontbold>Use our Pet Planner Tool.</myfontbold></p></li>
+				<li><p><myfontbold>With this tool, you can find the pet of you preference for your apartment size.</myfontbold></p></li>
+				<li><p><myfontbold><a href="#">Go to Pet Planner</a></myfontbold></p></li>
+			</div>
+
+			<div class="mySlides"><h1>Pet Map</h1>
+				<li><p><myfontbold>Looking for places to take your pet out?</myfontbold></p></li>
+				<li><p><myfontbold>Use our Pet Map Feature</myfontbold></p></li>
+				<li><p><myfontbold>Find pet-friendly camp sites, pet-friendly hikes, nearest Pet Clinics, Pet Stores</myfontbold></p></li>
+				<li><p><myfontbold><a href="#">Go to Pet Map</a></myfontbold></p></li>
+			</div>
+
+			<div class="mySlides"><h1>Coupon & Deals</h1>
+				<li><p><myfontbold>Finding Pet products costly?</myfontbold></p></li>
+				<li><p><myfontbold>Use our Coupons & Deals Section below</myfontbold></p></li>
+				<li><p><myfontbold>Find several online and in-store coupons and deals.</myfontbold></p></li>
+				<li><p><myfontbold><a href="#">Go to Coupons & Deals</a></myfontbold></p></li>
+			</div>
+
+		</div>
+</div>
+
+<div class="sectionBackground lowerSection">	
+	<div class="breedBackground borderColor lowerSection">
+		<h2 class="alignTextCenter">Breed of the Day</h2>
+		
+		<div class="facts_outer  borderWhite">
+			<img src="doberman.jpg" class="imageTextWrap">
+			<myfontbold class="alignTextCenter"><p><u>DOBERMAN</u></p></myfontbold>
+			<p><myfontbold>WEIGHT:</myfontbold> 60 to 80 pounds. </p>
+			<p><myfontbold>LIFESPAN:</myfontbold> 10 to 15 years. </p>
+			<p><myfontbold>COLORS:</myfontbold> Black, White, Red, Fawn, Blue</p>
+			<p><myfontbold>TEMPARAMENT:</myfontbold> Alert, Intelligent</p>
+			<p><myfontbold>CHARACTERISTICS:</myfontbold> Energetic, Fearless, Loyal, Obedient</p>
+		</div>
+	</div>
+
+
+	<div class="dealsBackground lowerSection">
+		<h2 class="alignTextCenter">Subscribe To Our NewsLetter</h2>
+		<form class="newsletterForm"> 				
+  				<mylabelfont class="input inputLabel formMargin">First Name:</mylabelfont>
+  				<input class="input inputText formMargin" type="text" name="firstname" value=""><br>
+  				<mylabelfont class="input inputLabel formMargin">Last&nbsp Name:</mylabelfont>
+  				<input class="input inputText formMargin" type="text" name="firstname" value=""><br>
+  				<mylabelfont class="input inputLabel formMargin">Email  &nbsp&nbsp&nbspId:</mylabelfont>
+  				<input class="input inputText formMargin" type="text" name="email_id" value=""><br><br>
+  				<button class="inputButton formMargin " type="button" name="subscribe_button">Subscribe</button>
+			</form>
+	</div>
+</div>
+
+<div class="sectionBackground">
+<div class="slidesBackground borderWhite upperSection copyrights">
+	Copyrights reserved.<br>
+	Last Update: 31 July,2016.
+</div>
+</div>
+
+<script src="index.js"></script>
+</body>
+
+</html>
